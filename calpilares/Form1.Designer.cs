@@ -49,6 +49,7 @@
             this.btnC = new System.Windows.Forms.Button();
             this.btndivi = new System.Windows.Forms.Button();
             this.porciento = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Resultado
@@ -278,12 +279,25 @@
             this.porciento.UseVisualStyleBackColor = true;
             this.porciento.Click += new System.EventHandler(this.btnporci_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(305, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 57);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(377, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btndivi);
@@ -335,6 +349,7 @@
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btndivi;
         private System.Windows.Forms.Button porciento;
+        private System.Windows.Forms.Button button1;
     }
 }
 
